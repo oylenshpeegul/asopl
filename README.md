@@ -1,11 +1,9 @@
 # asopl
 A survey of programming languages
 
-Source for
+Source for [these slides](http://oylenshpeegul.github.io/asopl/).
 
-http://oylenshpeegul.github.io/asopl/
+This is the Emacs org-mode file that creates that slideshow using [Org-HTML-Slideshow](https://github.com/relevance/org-html-slideshow).
 
-This is the Emacs org-mode file that creates the above slideshow using 
 
-https://github.com/relevance/org-html-slideshow
 
