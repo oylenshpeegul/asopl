@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2016-01-06 Wed 21:18 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="tim" />
+<link rel="stylesheet" type="text/css" href="common.css" />
+<link rel="stylesheet" type="text/css" href="screen.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="projection.css" media="projection" />
+<link rel="stylesheet" type="text/css" href="presenter.css" media="presenter" />
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline1">A Survey of Programming Languages&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline2">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline3">Grace Hopper&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline4">FLOW-MATIC&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline5">COBOL&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline6">COBOL&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline7">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline8">John Backus&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline9">Fortran&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline10">Fortran&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline11">John Backus also gave us&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notes">notes</span></span></a></li>
+<li><a href="#orgheadline12">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline13">John McCarthy&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline14">Lisp&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline15">Lisp&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline16">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline17">Niklaus Wirth&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline18">Pascal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline19">Pascal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline20">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline21">Dennis Ritchie&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline22">C&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline23">C&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline24">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline25">Ken Thompson&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline26">sh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline27">sh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline28">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline29">Lee McMahon&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline30">sed&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline31">sed&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline32">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline33">Alfred Aho, Peter Weinberger, and Brian Kernighan&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline34">Awk&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline35">Awk&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline36">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline37">Stephen Bourne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline38">sh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline39">sh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline40">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline41">Bill Joy&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline42">csh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline43">csh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline44">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline45">Bjarne Stroustrup&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline46">C++&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline47">C++&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline48">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline49">David Korn&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline50">ksh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline51">ksh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline52">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline53">Joe Armstrong, Robert Verding, and Mike Williams&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline54">Erlang&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline55">Erlang&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline56">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline57">Larry Wall&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline58">Perl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline59">Perl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline60">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline61">John Ousterhout&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline62">Tcl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline63">Tcl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline64">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline65">Brian Fox&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline66">Bash&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline67">Bash&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline68">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline69">Guido van Rossum&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline70">Python&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline71">Python&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline72">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline73">James Gosling, Patrick Naughton, and Mike Sheridan&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline74">Java&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline75">Java&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline76">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline77">Yukihiro Matsumoto&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline78">Ruby&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline79">Ruby&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline80">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline81">Rasmus Lerdorf&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline82">PHP&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline83">PHP&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline84">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline85">Brendan Eich&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline86">JavaScript&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline87">JavaScript&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline88">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline89">Anders Hejlsberg&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline90">C#&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline91">C#&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline92">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline93">Don Syme&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline94">F#&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline95">F#&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline96">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline97">Rich Hickey&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline98">Clojure&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline99">Clojure&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline100">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline101">Robert Griesemer, Rob Pike, and Ken Thompson&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline102">Go&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline103">Go&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline104">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline105">Chris Lattner&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline106">Swift&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline107">Swift&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline108">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline109">José Valim&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline110">Elixir&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline111">Elixir&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline112">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline113">Graydon Hoare&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline114">Rust&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline115">Rust&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+<li><a href="#orgheadline116">Thanks!&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1">A Survey of Programming Languages&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline1">
+<ul class="org-ul">
+<li>@oylenshpeegul</li>
+<li>oylenshpeegul@gmail.com</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline2">
+
+<div class="figure">
+<p><img src="./Grace_Hopper-FLOWMATIC.jpg" alt="pic of Grace Hopper" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3">Grace Hopper&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline3">
+
+<div class="figure">
+<p><img src="./Grace_Hopper-FLOWMATIC.jpg" alt="pic of Grace Hopper" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4">FLOW-MATIC&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline4">
+<ul class="org-ul">
+<li>1955 B-0 (Business Language Version 0)</li>
+<li>1955 FLOW-MATIC</li>
+<li>1960 COBOL</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline5" class="outline-2">
+<h2 id="orgheadline5">COBOL&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline5">
+
+<div class="figure">
+<p><img src="./COBOL_Report_Apr60.jpg" alt="cover of COBOL 60 Manual" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6">COBOL&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline6">
+<div class="org-src-container">
+
+<pre class="src src-cobol"><span style="color: #490026; font-weight: bold;">IDENTIFICATION</span> <span style="color: #490026; font-weight: bold;">DIVISION</span>.
+<span style="color: #490026; font-weight: bold;">PROGRAM-ID</span>. HELLOWORLD.
+<span style="color: #490026; font-weight: bold;">PROCEDURE</span> <span style="color: #490026; font-weight: bold;">DIVISION</span>.
+MAIN.
+  <span style="color: #490026; font-weight: bold;">DISPLAY</span> <span style="color: #0f126e;">'Hello, World!'</span>.
+  <span style="color: #490026; font-weight: bold;">STOP</span> <span style="color: #490026; font-weight: bold;">RUN</span>.
+</pre>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline7">
+
+<div class="figure">
+<p><img src="./John_Backus-Fortran.jpg" alt="pic of John Backus" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8">John Backus&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline8">
+
+<div class="figure">
+<p><img src="./John_Backus-Fortran.jpg" alt="pic of John Backus" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline9" class="outline-2">
+<h2 id="orgheadline9">Fortran&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline9">
+<ul class="org-ul">
+<li>1957 externally available</li>
+<li>1956 available at IBM</li>
+<li>1954 first program run</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10">Fortran&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline10">
+<div class="org-src-container">
+
+<pre class="src src-fortran"><span style="color: #490026; font-weight: bold;">print</span> *,<span style="color: #0f126e;">"Hello, World!"</span>
+<span style="color: #490026; font-weight: bold;">end</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline11" class="outline-2">
+<h2 id="orgheadline11">John Backus also gave us&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notes">notes</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline11">
+<ul class="org-ul">
+<li>ALGOL</li>
+<li>Backus-Naur form (BNF)</li>
+<li>Function-level programming</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline12" class="outline-2">
+<h2 id="orgheadline12">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline12">
+
+<div class="figure">
+<p><img src="./John_McCarthy-Lisp.jpg" alt="pic of John McCarthy" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline13" class="outline-2">
+<h2 id="orgheadline13">John McCarthy&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline13">
+
+<div class="figure">
+<p><img src="./John_McCarthy-Lisp.jpg" alt="pic of John McCarthy" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline14" class="outline-2">
+<h2 id="orgheadline14">Lisp&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline14">
+<ul class="org-ul">
+<li>1958 designed</li>
+<li>1960 "Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I"</li>
+<li>1962 first complete compiler written in Lisp</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline15" class="outline-2">
+<h2 id="orgheadline15">Lisp&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline15">
+<div class="org-src-container">
+
+<pre class="src src-lisp">(print <span style="color: #0f126e;">"Hello, World!"</span>)
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline16" class="outline-2">
+<h2 id="orgheadline16">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline16">
+
+<div class="figure">
+<p><img src="./Niklaus_Wirth-Pascal.jpg" alt="pic of Niklaus Wirth" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline17" class="outline-2">
+<h2 id="orgheadline17">Niklaus Wirth&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline17">
+
+<div class="figure">
+<p><img src="./Niklaus_Wirth-Pascal.jpg" alt="pic of Niklaus Wirth" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline18" class="outline-2">
+<h2 id="orgheadline18">Pascal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline18">
+<ul class="org-ul">
+<li>1966 Algol W</li>
+<li>1970 Pascal</li>
+<li>1978 Modula 2</li>
+<li>1986 Oberon</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline19" class="outline-2">
+<h2 id="orgheadline19">Pascal&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline19">
+<div class="org-src-container">
+
+<pre class="src src-pascal"><span style="color: #490026; font-weight: bold;">Begin</span>
+  Write(<span style="color: #0f126e;">'Hello, World!'</span>)
+<span style="color: #490026; font-weight: bold;">End</span>.
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline20" class="outline-2">
+<h2 id="orgheadline20">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline20">
+
+<div class="figure">
+<p><img src="./Dennis_Ritchie-C.jpg" alt="pic of Dennis Ritchie" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline21" class="outline-2">
+<h2 id="orgheadline21">Dennis Ritchie&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline21">
+
+<div class="figure">
+<p><img src="./Dennis_Ritchie-C.jpg" alt="pic of Dennis Ritchie" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline22" class="outline-2">
+<h2 id="orgheadline22">C&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline22">
+<ul class="org-ul">
+<li>1969 started design</li>
+<li>1972 appeared in Version 2 Unix</li>
+<li>1978 K &amp; R, <i>The C Programming Language</i></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline23" class="outline-2">
+<h2 id="orgheadline23">C&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline23">
+<div class="org-src-container">
+
+<pre class="src src-c"><span style="color: #9e0045;">#include</span> <span style="color: #0f126e;">&lt;stdio.h&gt;</span>
+
+<span style="color: #014500;">int</span> <span style="color: #340557; font-weight: bold;">main</span>()
+{
+    printf(<span style="color: #0f126e;">"Hello, World!\n"</span>);
+
+    <span style="color: #490026; font-weight: bold;">return</span> 0;
+}
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline24" class="outline-2">
+<h2 id="orgheadline24">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline24">
+
+<div class="figure">
+<p><img src="./Ken_Thompson-sh.jpg" alt="pic of Ken Thompson" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline25" class="outline-2">
+<h2 id="orgheadline25">Ken Thompson&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline25">
+
+<div class="figure">
+<p><img src="./Ken_Thompson-sh.jpg" alt="pic of Ken Thompson" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline26" class="outline-2">
+<h2 id="orgheadline26">sh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline26">
+<ul class="org-ul">
+<li>1971 appeared</li>
+<li>just called the shell then</li>
+<li>now called the Unix shell or Thompson shell</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline27" class="outline-2">
+<h2 id="orgheadline27">sh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline27">
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #9e0045;">echo</span> <span style="color: #0f126e;">"Hello, World!"</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline28" class="outline-2">
+<h2 id="orgheadline28">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline28">
+
+<div class="figure">
+<p><img src="./Lee_McMahon-sed.jpg" alt="pic of Lee McMahon" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline29" class="outline-2">
+<h2 id="orgheadline29">Lee McMahon&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline29">
+
+<div class="figure">
+<p><img src="./Lee_McMahon-sed.jpg" alt="pic of Lee McMahon" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline30" class="outline-2">
+<h2 id="orgheadline30">sed&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline30">
+<ul class="org-ul">
+<li>1973 developed</li>
+<li>1979 appeared in Version 7 Unix</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline31" class="outline-2">
+<h2 id="orgheadline31">sed&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline31">
+<div class="org-src-container">
+
+<pre class="src src-sed">s/.*/Hello, World!/
+q
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline32" class="outline-2">
+<h2 id="orgheadline32">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline32">
+
+<div class="figure">
+<p><img src="./Aho_Weinberger_Kernighan-Awk.jpg" alt="pic of Aho, Weinberger, and Kernighan" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline33" class="outline-2">
+<h2 id="orgheadline33">Alfred Aho, Peter Weinberger, and Brian Kernighan&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline33">
+
+<div class="figure">
+<p><img src="./Aho_Weinberger_Kernighan-Awk.jpg" alt="pic of Aho, Weinberger, and Kernighan" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline34" class="outline-2">
+<h2 id="orgheadline34">Awk&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline34">
+<ul class="org-ul">
+<li>1977 appeared</li>
+<li>1985 New Awk</li>
+<li>1988 Aho, Weinberger, and Kernighan, <i>The AWK Programming Language</i></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline35" class="outline-2">
+<h2 id="orgheadline35">Awk&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline35">
+<div class="org-src-container">
+
+<pre class="src src-awk"><span style="color: #490026; font-weight: bold;">BEGIN</span> { <span style="color: #9e0045;">print</span> <span style="color: #0f126e;">"Hello, world!"</span> }
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline36" class="outline-2">
+<h2 id="orgheadline36">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline36">
+
+<div class="figure">
+<p><img src="./Stephen_Bourne-sh.jpg" alt="pic of Stephen Bourne" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline37" class="outline-2">
+<h2 id="orgheadline37">Stephen Bourne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline37">
+
+<div class="figure">
+<p><img src="./Stephen_Bourne-sh.jpg" alt="pic of Stephen Bourne" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline38" class="outline-2">
+<h2 id="orgheadline38">sh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline38">
+<ul class="org-ul">
+<li>1977 appeared</li>
+<li>called the Bourne shell to distinguish it from regular Unix shell</li>
+<li>1984 K &amp; P, <i>The Unix Programming Environment</i></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline39" class="outline-2">
+<h2 id="orgheadline39">sh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline39">
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #9e0045;">echo</span> <span style="color: #0f126e;">"Hello, World!"</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline40" class="outline-2">
+<h2 id="orgheadline40">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline40">
+
+<div class="figure">
+<p><img src="./Bill_Joy-csh.jpg" alt="pic of Bill Joy" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline41" class="outline-2">
+<h2 id="orgheadline41">Bill Joy&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline41">
+
+<div class="figure">
+<p><img src="./Bill_Joy-csh.jpg" alt="pic of Bill Joy" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline42" class="outline-2">
+<h2 id="orgheadline42">csh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline42">
+<ul class="org-ul">
+<li>1978 appeared</li>
+<li>1981 tcsh, csh with TENEX-style completion</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline43" class="outline-2">
+<h2 id="orgheadline43">csh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline43">
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #9e0045;">echo</span> <span style="color: #0f126e;">"Hello, World!"</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline44" class="outline-2">
+<h2 id="orgheadline44">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline44">
+
+<div class="figure">
+<p><img src="./Bjarne_Stroustrup-C++.jpg" alt="pic of Bjarne Stroustrup" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline45" class="outline-2">
+<h2 id="orgheadline45">Bjarne Stroustrup&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline45">
+
+<div class="figure">
+<p><img src="./Bjarne_Stroustrup-C++.jpg" alt="pic of Bjarne Stroustrup" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline46" class="outline-2">
+<h2 id="orgheadline46">C++&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline46">
+<ul class="org-ul">
+<li>1979 C with Classes</li>
+<li>1983 C++</li>
+<li>1985 Stroustrup, <i>The C++ Programming Language</i></li>
+<li>1998 C++98</li>
+<li>2011 C++11</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline47" class="outline-2">
+<h2 id="orgheadline47">C++&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline47">
+<div class="org-src-container">
+
+<pre class="src src-c++"><span style="color: #9e0045;">#include</span> <span style="color: #0f126e;">&lt;iostream&gt;</span>
+
+<span style="color: #014500;">int</span> <span style="color: #340557; font-weight: bold;">main</span>()
+{
+   <span style="color: #374014;">std</span>::cout &lt;&lt; <span style="color: #0f126e;">"Hello, world!\n"</span>;
+}
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline48" class="outline-2">
+<h2 id="orgheadline48">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline48">
+
+<div class="figure">
+<p><img src="./David_Korn-ksh.jpg" alt="pic of David Korn" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline49" class="outline-2">
+<h2 id="orgheadline49">David Korn&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline49">
+
+<div class="figure">
+<p><img src="./David_Korn-ksh.jpg" alt="pic of David Korn" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline50" class="outline-2">
+<h2 id="orgheadline50">ksh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline50">
+<ul class="org-ul">
+<li>1983 appeared</li>
+<li>1988 ksh88 POSIX.2</li>
+<li>1993 ksh93</li>
+<li>2000 open sourced</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline51" class="outline-2">
+<h2 id="orgheadline51">ksh&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline51">
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #9e0045;">echo</span> <span style="color: #0f126e;">"Hello, World!"</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline52" class="outline-2">
+<h2 id="orgheadline52">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline52">
+
+<div class="figure">
+<p><img src="./Joe_Armstrong_Robert_Verding_&amp;_Mike_Williams-Erlang.jpg" alt="pic of Armstrong, Verding, and Williams" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline53" class="outline-2">
+<h2 id="orgheadline53">Joe Armstrong, Robert Verding, and Mike Williams&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline53">
+
+<div class="figure">
+<p><img src="./Joe_Armstrong_Robert_Verding_&amp;_Mike_Williams-Erlang.jpg" alt="pic of Armstrong, Verding, and Williams" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline54" class="outline-2">
+<h2 id="orgheadline54">Erlang&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline54">
+<ul class="org-ul">
+<li>1986 designed</li>
+<li>1990 "Erlang: The Movie"</li>
+<li>1998 open-sourced</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline55" class="outline-2">
+<h2 id="orgheadline55">Erlang&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline55">
+<div class="org-src-container">
+
+<pre class="src src-erlang"><span style="color: #9e0045;">-module</span>(hello).
+<span style="color: #9e0045;">-export</span>([<span style="color: #014500;">hello/0</span>]).
+
+<span style="color: #340557; font-weight: bold;">hello</span>() -&gt;<span style="color: #340557; font-weight: bold;"> </span><span style="color: #014500;">io</span>:<span style="color: #014500;">fwrite</span>(<span style="color: #0f126e;">"Hello, World!\n"</span>).
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline56" class="outline-2">
+<h2 id="orgheadline56">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline56">
+
+<div class="figure">
+<p><img src="./Larry_Wall-Perl.jpg" alt="pic of Larry Wall" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline57" class="outline-2">
+<h2 id="orgheadline57">Larry Wall&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline57">
+
+<div class="figure">
+<p><img src="./Larry_Wall-Perl.jpg" alt="pic of Larry Wall" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline58" class="outline-2">
+<h2 id="orgheadline58">Perl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline58">
+<ul class="org-ul">
+<li>1987 designed, version 1 released</li>
+<li>1991 <i>Programming Perl</i> (pink camel)</li>
+<li>1994 version 5 released</li>
+<li>1996 <i>Programming Perl, 2e</i> (blue camel)</li>
+<li>2015 version 6 released</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline59" class="outline-2">
+<h2 id="orgheadline59">Perl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline59">
+<div class="org-src-container">
+
+<pre class="src src-perl"><span style="color: #8b2500;">say</span> <span style="color: #0f126e;">'Hello, World!'</span>;
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline60" class="outline-2">
+<h2 id="orgheadline60">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline60">
+
+<div class="figure">
+<p><img src="./John_Ousterhout-Tcl.jpg" alt="pic of John Ousterhout" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline61" class="outline-2">
+<h2 id="orgheadline61">John Ousterhout&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline61">
+
+<div class="figure">
+<p><img src="./John_Ousterhout-Tcl.jpg" alt="pic of John Ousterhout" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline62" class="outline-2">
+<h2 id="orgheadline62">Tcl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline62">
+<ul class="org-ul">
+<li>1988 designed</li>
+<li>1990 released outside of Berkeley</li>
+<li>1990 Expect</li>
+<li>1991 Tk</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline63" class="outline-2">
+<h2 id="orgheadline63">Tcl&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline63">
+<div class="org-src-container">
+
+<pre class="src src-tcl"><span style="color: #9e0045;">puts</span> <span style="color: #0f126e;">"Hello, World!"</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline64" class="outline-2">
+<h2 id="orgheadline64">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline64">
+
+<div class="figure">
+<p><img src="./Brian_J_Fox-bash.png" alt="pic of Brian J. Fox" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline65" class="outline-2">
+<h2 id="orgheadline65">Brian Fox&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline65">
+
+<div class="figure">
+<p><img src="./Brian_J_Fox-bash.png" alt="pic of Brian J. Fox" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline66" class="outline-2">
+<h2 id="orgheadline66">Bash&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline66">
+<ul class="org-ul">
+<li>1988 started coding</li>
+<li>1989 released</li>
+<li>Bourne-Again SHell</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline67" class="outline-2">
+<h2 id="orgheadline67">Bash&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline67">
+<div class="org-src-container">
+
+<pre class="src src-bash"><span style="color: #9e0045;">echo</span> <span style="color: #0f126e;">"Hello, World!"</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline68" class="outline-2">
+<h2 id="orgheadline68">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline68">
+
+<div class="figure">
+<p><img src="./Guido_van_Rossum-Python.jpg" alt="pic of Guido van Rossum" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline69" class="outline-2">
+<h2 id="orgheadline69">Guido van Rossum&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline69">
+
+<div class="figure">
+<p><img src="./Guido_van_Rossum-Python.jpg" alt="pic of Guido van Rossum" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline70" class="outline-2">
+<h2 id="orgheadline70">Python&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline70">
+<ul class="org-ul">
+<li>1989 designed</li>
+<li>1991 posted to <i>alt.sources</i></li>
+<li>1994 version 1 released</li>
+<li>2008 version 3 released</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline71" class="outline-2">
+<h2 id="orgheadline71">Python&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline71">
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #490026; font-weight: bold;">print</span>(<span style="color: #0f126e;">"Hello, World!"</span>)
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline72" class="outline-2">
+<h2 id="orgheadline72">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline72">
+
+<div class="figure">
+<p><img src="./Gosling_Naughton_Sheridan-Java.jpg" alt="pic of Gosling, Naughton, and Sheridan" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline73" class="outline-2">
+<h2 id="orgheadline73">James Gosling, Patrick Naughton, and Mike Sheridan&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline73">
+
+<div class="figure">
+<p><img src="./Gosling_Naughton_Sheridan-Java.jpg" alt="pic of Gosling, Naughton, and Sheridan" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline74" class="outline-2">
+<h2 id="orgheadline74">Java&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline74">
+<ul class="org-ul">
+<li>1991 Oak</li>
+<li>1995 version 1.0</li>
+<li>2007 open-sourced</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline75" class="outline-2">
+<h2 id="orgheadline75">Java&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline75">
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #490026; font-weight: bold;">class</span> <span style="color: #014500;">HelloWorldApp</span> {
+    <span style="color: #490026; font-weight: bold;">public</span> <span style="color: #490026; font-weight: bold;">static</span> <span style="color: #014500;">void</span> <span style="color: #340557; font-weight: bold;">main</span>(<span style="color: #014500;">String</span>[] <span style="color: #014500;">args</span>) {
+        System.out.println(<span style="color: #0f126e;">"Hello, World!"</span>);
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline76" class="outline-2">
+<h2 id="orgheadline76">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline76">
+
+<div class="figure">
+<p><img src="./Yukihiro_Matsumoto-Ruby.jpg" alt="pic of Yukihiro Matsumoto" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline77" class="outline-2">
+<h2 id="orgheadline77">Yukihiro Matsumoto&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline77">
+
+<div class="figure">
+<p><img src="./Yukihiro_Matsumoto-Ruby.jpg" alt="pic of Yukihiro Matsumoto" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline78" class="outline-2">
+<h2 id="orgheadline78">Ruby&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline78">
+<ul class="org-ul">
+<li>1993 conceived</li>
+<li>1995 posted to Japanese newsgroups</li>
+<li>1996 version 1 released</li>
+<li>2001 <i>Programming Ruby</i> (pickaxe)</li>
+<li>2013 version 2 released</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline79" class="outline-2">
+<h2 id="orgheadline79">Ruby&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline79">
+<div class="org-src-container">
+
+<pre class="src src-ruby"><span style="color: #9e0045;">puts</span> <span style="color: #0f126e;">"Hello, World!"</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline80" class="outline-2">
+<h2 id="orgheadline80">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline80">
+
+<div class="figure">
+<p><img src="./Rasmus_Lerdorf-PHP.jpg" alt="pic of Rasmus Lerdorf" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline81" class="outline-2">
+<h2 id="orgheadline81">Rasmus Lerdorf&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline81">
+
+<div class="figure">
+<p><img src="./Rasmus_Lerdorf-PHP.jpg" alt="pic of Rasmus Lerdorf" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline82" class="outline-2">
+<h2 id="orgheadline82">PHP&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline82">
+<ul class="org-ul">
+<li>1994 "Personal Home Page/Forms Interpreter" or PHP/FI</li>
+<li>1995 "Personal Home Page Tools (PHP Tools) version 1.0"</li>
+<li>1997 version 3, Zeev Suraski and Andi Gutmans</li>
+<li>2000 version 4, Zend Engine 1.0</li>
+<li>2004 version 5, Zend Engine II</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline83" class="outline-2">
+<h2 id="orgheadline83">PHP&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline83">
+<div class="org-src-container">
+
+<pre class="src src-php"><span style="color: #9e0045;">&lt;?php</span> 
+<span style="color: #490026; font-weight: bold;">echo</span> <span style="color: #0f126e;">"Hello, World!"</span>;
+<span style="color: #9e0045;">?&gt;</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline84" class="outline-2">
+<h2 id="orgheadline84">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline84">
+
+<div class="figure">
+<p><img src="./Brendan_Eich-JavaScript.jpg" alt="pic of Brendan Eich" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline85" class="outline-2">
+<h2 id="orgheadline85">Brendan Eich&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline85">
+
+<div class="figure">
+<p><img src="./Brendan_Eich-JavaScript.jpg" alt="pic of Brendan Eich" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline86" class="outline-2">
+<h2 id="orgheadline86">JavaScript&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline86">
+<ul class="org-ul">
+<li>1995 Mocha</li>
+<li>1995 LiveScript in Netscape Navigator 2.0</li>
+<li>1995 JavaScript in Netscape Navigator 2.0B3</li>
+<li>1996 EcmaScript</li>
+<li>2009 Node.js</li>
+<li>2015 ES6 -&gt; EcmaScript2015</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline87" class="outline-2">
+<h2 id="orgheadline87">JavaScript&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline87">
+<div class="org-src-container">
+
+<pre class="src src-js">console.log(<span style="color: #0f126e;">"Hello World!"</span>);
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline88" class="outline-2">
+<h2 id="orgheadline88">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline88">
+
+<div class="figure">
+<p><img src="./Anders_Hejlsberg-C_Sharp.jpg" alt="pic of Anders Hejlsberg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline89" class="outline-2">
+<h2 id="orgheadline89">Anders Hejlsberg&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline89">
+
+<div class="figure">
+<p><img src="./Anders_Hejlsberg-C_Sharp.jpg" alt="pic of Anders Hejlsberg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline90" class="outline-2">
+<h2 id="orgheadline90">C#&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline90">
+<ul class="org-ul">
+<li>1999 Cool ("C-like Object Oriented Language")</li>
+<li>2000 C# (and .NET)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline91" class="outline-2">
+<h2 id="orgheadline91">C#&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline91">
+<div class="org-src-container">
+
+<pre class="src src-csharp"><span style="color: #490026; font-weight: bold;">using</span> <span style="color: #374014;">System</span>;
+
+<span style="color: #490026; font-weight: bold;">class</span> <span style="color: #014500;">Program</span>
+{
+    <span style="color: #490026; font-weight: bold;">static</span> <span style="color: #014500;">void</span> <span style="color: #340557; font-weight: bold;">Main</span>()
+    {
+        Console.WriteLine(<span style="color: #0f126e;">"Hello, World!"</span>);
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline92" class="outline-2">
+<h2 id="orgheadline92">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline92">
+
+<div class="figure">
+<p><img src="./Don_Syme-FSharp.jpg" alt="pic of Don Syme" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline93" class="outline-2">
+<h2 id="orgheadline93">Don Syme&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline93">
+
+<div class="figure">
+<p><img src="./Don_Syme-FSharp.jpg" alt="pic of Don Syme" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline94" class="outline-2">
+<h2 id="orgheadline94">F#&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline94">
+<ul class="org-ul">
+<li>2005 version 1.0</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline95" class="outline-2">
+<h2 id="orgheadline95">F#&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline95">
+<div class="org-src-container">
+
+<pre class="src src-fsharp">printfn <span style="color: #0f126e;">"Hello, World!"</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline96" class="outline-2">
+<h2 id="orgheadline96">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline96">
+
+<div class="figure">
+<p><img src="./Rich_Hickey-Clojure.jpg" alt="pic of Rich Hickey" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline97" class="outline-2">
+<h2 id="orgheadline97">Rich Hickey&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline97">
+
+<div class="figure">
+<p><img src="./Rich_Hickey-Clojure.jpg" alt="pic of Rich Hickey" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline98" class="outline-2">
+<h2 id="orgheadline98">Clojure&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline98">
+<ul class="org-ul">
+<li>2005 started designing</li>
+<li>2007 initial release</li>
+<li>2009 version 1.0 release</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline99" class="outline-2">
+<h2 id="orgheadline99">Clojure&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline99">
+<div class="org-src-container">
+
+<pre class="src src-lisp">(println <span style="color: #0f126e;">"Hello, World!"</span>)
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline100" class="outline-2">
+<h2 id="orgheadline100">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline100">
+
+<div class="figure">
+<p><img src="./Griesemer_Pike_Thompson-Go.png" alt="pic of Griesemer, Pike, and Thompson" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline101" class="outline-2">
+<h2 id="orgheadline101">Robert Griesemer, Rob Pike, and Ken Thompson&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline101">
+
+<div class="figure">
+<p><img src="./Griesemer_Pike_Thompson-Go.png" alt="pic of Griesemer, Pike, and Thompson" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline102" class="outline-2">
+<h2 id="orgheadline102">Go&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline102">
+<ul class="org-ul">
+<li>2007 started development</li>
+<li>2009 announced</li>
+<li>2012 version 1</li>
+<li>2015 D &amp; K, <i>The Go Programming Language</i></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline103" class="outline-2">
+<h2 id="orgheadline103">Go&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline103">
+<div class="org-src-container">
+
+<pre class="src src-go"><span style="color: #490026; font-weight: bold;">package</span> main
+
+<span style="color: #490026; font-weight: bold;">import</span> <span style="color: #0f126e;">"fmt"</span>
+
+<span style="color: #490026; font-weight: bold;">func</span> <span style="color: #340557; font-weight: bold;">main</span>() {
+    fmt.<span style="color: #340557; font-weight: bold;">Println</span>(<span style="color: #0f126e;">"Hello, World!"</span>)
+}
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline104" class="outline-2">
+<h2 id="orgheadline104">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline104">
+
+<div class="figure">
+<p><img src="./Chris_Lattner-Swift.jpg" alt="pic of Chris Lattner" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline105" class="outline-2">
+<h2 id="orgheadline105">Chris Lattner&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline105">
+
+<div class="figure">
+<p><img src="./Chris_Lattner-Swift.jpg" alt="pic of Chris Lattner" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline106" class="outline-2">
+<h2 id="orgheadline106">Swift&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline106">
+<ul class="org-ul">
+<li>2010 developed</li>
+<li>2014 version 1</li>
+<li>2015-12-03 open sourced</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline107" class="outline-2">
+<h2 id="orgheadline107">Swift&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline107">
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #490026; font-weight: bold;">print</span>(<span style="color: #0f126e;">"Hello, World!"</span>)
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline108" class="outline-2">
+<h2 id="orgheadline108">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline108">
+
+<div class="figure">
+<p><img src="./Jose_Valim-Elixir.jpg" alt="pic of José Valim" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline109" class="outline-2">
+<h2 id="orgheadline109">José Valim&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline109">
+
+<div class="figure">
+<p><img src="./Jose_Valim-Elixir.jpg" alt="pic of José Valim" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline110" class="outline-2">
+<h2 id="orgheadline110">Elixir&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline110">
+<ul class="org-ul">
+<li>2012 developed</li>
+<li>2014 version 1</li>
+<li>2015 version 1.1</li>
+<li>2016 version 1.2</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline111" class="outline-2">
+<h2 id="orgheadline111">Elixir&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline111">
+<div class="org-src-container">
+
+<pre class="src src-elixir"><span style="color: #014500;">IO</span>.puts <span style="color: #0f126e;">"Hello, World!"</span>
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline112" class="outline-2">
+<h2 id="orgheadline112">?&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline112">
+
+<div class="figure">
+<p><img src="./Graydon_Hoare-Rust.jpg" alt="pic of Graydon Hoare" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline113" class="outline-2">
+<h2 id="orgheadline113">Graydon Hoare&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline113">
+
+<div class="figure">
+<p><img src="./Graydon_Hoare-Rust.jpg" alt="pic of Graydon Hoare" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline114" class="outline-2">
+<h2 id="orgheadline114">Rust&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline114">
+<ul class="org-ul">
+<li>2009 started by Graydon Hoare in OCaml</li>
+<li>2010 developed by Mozilla in Rust</li>
+<li>2012 first pre-alpha release</li>
+<li>2015 version 1.0</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline115" class="outline-2">
+<h2 id="orgheadline115">Rust&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline115">
+<div class="org-src-container">
+
+<pre class="src src-rust"><span style="color: #490026; font-weight: bold;">fn</span> <span style="color: #340557; font-weight: bold;">main</span>() {
+    <span style="color: #9e0045;">println!</span>(<span style="color: #0f126e;">"Hello, World!"</span>);
+}
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline116" class="outline-2">
+<h2 id="orgheadline116">Thanks!&#xa0;&#xa0;&#xa0;<span class="tag"><span class="slide">slide</span></span></h2>
+<div class="outline-text-2" id="text-orgheadline116">
+<ul class="org-ul">
+<li>@oylenshpeegul</li>
+<li>oylenshpeegul@gmail.com</li>
+</ul>
+
+
+<script type="text/javascript" src="org-html-slideshow.js"></script>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: tim</p>
+<p class="date">Created: 2016-01-06 Wed 21:18</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
