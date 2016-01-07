@@ -382,12 +382,12 @@ puts "Hello, World!"
 * ?																  :slide:
 
 #+ATTR_HTML: :alt pic of Brian J. Fox
-[[./Brian_J_Fox-bash.png]]
+[[./Brian_J_Fox-bash.jpg]]
 
 * Brian Fox 														  :slide:
 
 #+ATTR_HTML: :alt pic of Brian J. Fox
-[[./Brian_J_Fox-bash.png]]
+[[./Brian_J_Fox-bash.jpg]]
 
 * Bash 																  :slide:
 
@@ -603,12 +603,12 @@ printfn "Hello, World!"
 * ?																  :slide:
 
 #+ATTR_HTML: :alt pic of Griesemer, Pike, and Thompson
-[[./Griesemer_Pike_Thompson-Go.png]]
+[[./Griesemer_Pike_Thompson-Go.jpg]]
 
 * Robert Griesemer, Rob Pike, and Ken Thompson 						  :slide:
 
 #+ATTR_HTML: :alt pic of Griesemer, Pike, and Thompson
-[[./Griesemer_Pike_Thompson-Go.png]]
+[[./Griesemer_Pike_Thompson-Go.jpg]]
 
 * Go 																  :slide:
 
