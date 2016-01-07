@@ -1,0 +1,729 @@
+
+* A Survey of Programming Languages									  :slide:
+- @oylenshpeegul
+- oylenshpeegul@gmail.com
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Grace Hopper
+[[./Grace_Hopper-FLOWMATIC.jpg]]
+
+* Grace Hopper 														  :slide:
+
+#+ATTR_HTML: :alt pic of Grace Hopper
+[[./Grace_Hopper-FLOWMATIC.jpg]]
+
+* FLOW-MATIC 														  :slide:
+
+- 1955 B-0 (Business Language Version 0)
+- 1955 FLOW-MATIC
+- 1960 COBOL
+
+* COBOL 															  :slide:
+
+#+ATTR_HTML: :alt cover of COBOL 60 Manual
+[[./COBOL_Report_Apr60.jpg]]
+
+* COBOL 															  :slide:
+
+#+BEGIN_SRC cobol
+IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLOWORLD.
+PROCEDURE DIVISION.
+MAIN.
+  DISPLAY 'Hello, World!'.
+  STOP RUN.
+#+END_SRC
+
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of John Backus
+[[./John_Backus-Fortran.jpg]]
+
+* John Backus 														  :slide:
+
+#+ATTR_HTML: :alt pic of John Backus
+[[./John_Backus-Fortran.jpg]]
+
+* Fortran															  :slide:
+
+
+- 1957 externally available
+- 1956 available at IBM
+- 1954 first program run
+
+* Fortran															  :slide:
+
+#+BEGIN_SRC fortran
+      print *,"Hello, World!"
+      end
+#+END_SRC
+
+* John Backus also gave us 											  :notes:
+
+- ALGOL
+- Backus-Naur form (BNF)
+- Function-level programming
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of John McCarthy
+[[./John_McCarthy-Lisp.jpg]]
+
+* John McCarthy 													  :slide:
+
+#+ATTR_HTML: :alt pic of John McCarthy
+[[./John_McCarthy-Lisp.jpg]]
+
+* Lisp 																  :slide:
+
+- 1958 designed
+- 1960 "Recursive Functions of Symbolic Expressions and Their Computation by Machine, Part I"
+- 1962 first complete compiler written in Lisp
+
+* Lisp 																  :slide:
+
+#+BEGIN_SRC lisp
+(print "Hello, World!")
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Niklaus Wirth
+[[./Niklaus_Wirth-Pascal.jpg]]
+
+* Niklaus Wirth 													  :slide:
+
+#+ATTR_HTML: :alt pic of Niklaus Wirth
+[[./Niklaus_Wirth-Pascal.jpg]]
+
+* Pascal 															  :slide:
+
+- 1966 Algol W
+- 1970 Pascal
+- 1978 Modula 2
+- 1986 Oberon
+
+* Pascal 															  :slide:
+#+BEGIN_SRC pascal
+Begin
+  Write('Hello, World!')
+End.
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Dennis Ritchie
+[[./Dennis_Ritchie-C.jpg]]
+
+* Dennis Ritchie 													  :slide:
+
+#+ATTR_HTML: :alt pic of Dennis Ritchie
+[[./Dennis_Ritchie-C.jpg]]
+
+* C																	  :slide:
+
+- 1969 started design
+- 1972 appeared in Version 2 Unix
+- 1978 K & R, /The C Programming Language/
+
+* C																	  :slide:
+#+BEGIN_SRC c
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello, World!\n");
+
+    return 0;
+}
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Ken Thompson
+[[./Ken_Thompson-sh.jpg]]
+
+* Ken Thompson 														  :slide:
+
+#+ATTR_HTML: :alt pic of Ken Thompson
+[[./Ken_Thompson-sh.jpg]]
+
+* sh 																  :slide:
+
+- 1971 appeared
+- just called the shell then
+- now called the Unix shell or Thompson shell
+
+* sh 																  :slide:
+#+BEGIN_SRC sh
+echo "Hello, World!"
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Lee McMahon
+[[./Lee_McMahon-sed.jpg]]
+
+* Lee McMahon 														  :slide:
+
+#+ATTR_HTML: :alt pic of Lee McMahon
+[[./Lee_McMahon-sed.jpg]]
+
+* sed 																  :slide:
+
+- 1973 developed
+- 1979 appeared in Version 7 Unix
+
+* sed 																  :slide:
+#+BEGIN_SRC sed
+s/.*/Hello, World!/
+q
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Aho, Weinberger, and Kernighan
+[[./Aho_Weinberger_Kernighan-Awk.jpg]]
+
+* Alfred Aho, Peter Weinberger, and Brian Kernighan 				  :slide:
+
+#+ATTR_HTML: :alt pic of Aho, Weinberger, and Kernighan
+[[./Aho_Weinberger_Kernighan-Awk.jpg]]
+
+* Awk 																  :slide:
+
+- 1977 appeared
+- 1985 New Awk
+- 1988 Aho, Weinberger, and Kernighan, /The AWK Programming Language/
+
+* Awk 																  :slide:
+#+BEGIN_SRC awk
+BEGIN { print "Hello, world!" }
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Stephen Bourne
+[[./Stephen_Bourne-sh.jpg]]
+
+* Stephen Bourne 													  :slide:
+
+#+ATTR_HTML: :alt pic of Stephen Bourne
+[[./Stephen_Bourne-sh.jpg]]
+
+* sh 																  :slide:
+
+- 1977 appeared
+- called the Bourne shell to distinguish it from regular Unix shell
+- 1984 K & P, /The Unix Programming Environment/
+
+* sh 																  :slide:
+#+BEGIN_SRC sh
+echo "Hello, World!"
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Bill Joy
+[[./Bill_Joy-csh.jpg]]
+
+* Bill Joy 															  :slide:
+
+#+ATTR_HTML: :alt pic of Bill Joy
+[[./Bill_Joy-csh.jpg]]
+
+* csh 																  :slide:
+
+- 1978 appeared
+- 1981 tcsh, csh with TENEX-style completion
+
+* csh 																  :slide:
+#+BEGIN_SRC sh
+echo "Hello, World!"
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Bjarne Stroustrup
+[[./Bjarne_Stroustrup-C++.jpg]]
+
+* Bjarne Stroustrup 												  :slide:
+
+#+ATTR_HTML: :alt pic of Bjarne Stroustrup
+[[./Bjarne_Stroustrup-C++.jpg]]
+
+* C++ 																  :slide:
+
+- 1979 C with Classes
+- 1983 C++
+- 1985 Stroustrup, /The C++ Programming Language/
+- 1998 C++98
+- 2011 C++11
+
+* C++ 																  :slide:
+#+BEGIN_SRC c++
+#include <iostream>
+
+int main()
+{
+   std::cout << "Hello, world!\n";
+}
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of David Korn
+[[./David_Korn-ksh.jpg]]
+
+* David Korn 														  :slide:
+
+#+ATTR_HTML: :alt pic of David Korn
+[[./David_Korn-ksh.jpg]]
+
+* ksh 																  :slide:
+
+- 1983 appeared
+- 1988 ksh88 POSIX.2
+- 1993 ksh93
+- 2000 open sourced
+
+* ksh 																  :slide:
+#+BEGIN_SRC sh
+echo "Hello, World!"
+#+END_SRC
+
+
+* ?																  :slide:
+
+#+ATTR_HTML: :alt pic of Armstrong, Verding, and Williams
+[[./Joe_Armstrong_Robert_Verding_&_Mike_Williams-Erlang.jpg]]
+
+* Joe Armstrong, Robert Verding, and Mike Williams 					  :slide:
+
+#+ATTR_HTML: :alt pic of Armstrong, Verding, and Williams
+[[./Joe_Armstrong_Robert_Verding_&_Mike_Williams-Erlang.jpg]]
+
+* Erlang 															  :slide:
+
+- 1986 designed
+- 1990 "Erlang: The Movie"
+- 1998 open-sourced
+  
+* Erlang 															  :slide:
+#+BEGIN_SRC erlang
+-module(hello).
+-export([hello/0]).
+
+hello() -> io:fwrite("Hello, World!\n").
+#+END_SRC
+
+
+* ?																  :slide:
+
+#+ATTR_HTML: :alt pic of Larry Wall
+[[./Larry_Wall-Perl.jpg]]
+
+* Larry Wall 														  :slide:
+
+#+ATTR_HTML: :alt pic of Larry Wall
+[[./Larry_Wall-Perl.jpg]]
+
+* Perl 																  :slide:
+
+- 1987 designed, version 1 released
+- 1991 /Programming Perl/ (pink camel)
+- 1994 version 5 released
+- 1996 /Programming Perl, 2e/ (blue camel)
+- 2015 version 6 released
+
+* Perl 																  :slide:
+#+BEGIN_SRC perl
+say 'Hello, World!';
+#+END_SRC
+
+
+* ?																  :slide:
+
+#+ATTR_HTML: :alt pic of John Ousterhout
+[[./John_Ousterhout-Tcl.jpg]]
+
+* John Ousterhout 													  :slide:
+
+#+ATTR_HTML: :alt pic of John Ousterhout
+[[./John_Ousterhout-Tcl.jpg]]
+
+* Tcl 																  :slide:
+
+- 1988 designed
+- 1990 released outside of Berkeley
+- 1990 Expect
+- 1991 Tk
+
+* Tcl 																  :slide:
+#+BEGIN_SRC tcl
+puts "Hello, World!"
+#+END_SRC
+
+
+* ?																  :slide:
+
+#+ATTR_HTML: :alt pic of Brian J. Fox
+[[./Brian_J_Fox-bash.png]]
+
+* Brian Fox 														  :slide:
+
+#+ATTR_HTML: :alt pic of Brian J. Fox
+[[./Brian_J_Fox-bash.png]]
+
+* Bash 																  :slide:
+
+- 1988 started coding
+- 1989 released
+- Bourne-Again SHell
+
+* Bash 																  :slide:
+#+BEGIN_SRC bash
+echo "Hello, World!"
+#+END_SRC
+
+
+* ?																  :slide:
+
+#+ATTR_HTML: :alt pic of Guido van Rossum
+[[./Guido_van_Rossum-Python.jpg]]
+
+* Guido van Rossum 													  :slide:
+
+#+ATTR_HTML: :alt pic of Guido van Rossum
+[[./Guido_van_Rossum-Python.jpg]]
+
+* Python 															  :slide:
+
+- 1989 designed
+- 1991 posted to /alt.sources/
+- 1994 version 1 released
+- 2008 version 3 released
+
+* Python 															  :slide:
+#+BEGIN_SRC python
+print("Hello, World!")
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Gosling, Naughton, and Sheridan
+[[./Gosling_Naughton_Sheridan-Java.jpg]]
+
+* James Gosling, Patrick Naughton, and Mike Sheridan 				  :slide:
+
+#+ATTR_HTML: :alt pic of Gosling, Naughton, and Sheridan
+[[./Gosling_Naughton_Sheridan-Java.jpg]]
+
+* Java 																  :slide:
+
+- 1991 Oak
+- 1995 version 1.0
+- 2007 open-sourced
+
+* Java 																  :slide:
+#+BEGIN_SRC java
+class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+#+END_SRC
+
+
+* ?																  :slide:
+
+#+ATTR_HTML: :alt pic of Yukihiro Matsumoto
+[[./Yukihiro_Matsumoto-Ruby.jpg]]
+
+* Yukihiro Matsumoto 												  :slide:
+
+#+ATTR_HTML: :alt pic of Yukihiro Matsumoto
+[[./Yukihiro_Matsumoto-Ruby.jpg]]
+
+* Ruby 																  :slide:
+
+- 1993 conceived
+- 1995 posted to Japanese newsgroups
+- 1996 version 1 released
+- 2001 /Programming Ruby/ (pickaxe)
+- 2013 version 2 released
+
+* Ruby 																  :slide:
+#+BEGIN_SRC ruby
+puts "Hello, World!"
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Rasmus Lerdorf
+[[./Rasmus_Lerdorf-PHP.jpg]]
+
+* Rasmus Lerdorf 													  :slide:
+
+#+ATTR_HTML: :alt pic of Rasmus Lerdorf
+[[./Rasmus_Lerdorf-PHP.jpg]]
+
+* PHP 																  :slide:
+
+- 1994 "Personal Home Page/Forms Interpreter" or PHP/FI
+- 1995 "Personal Home Page Tools (PHP Tools) version 1.0"
+- 1997 version 3, Zeev Suraski and Andi Gutmans
+- 2000 version 4, Zend Engine 1.0
+- 2004 version 5, Zend Engine II
+
+* PHP 																  :slide:
+
+#+BEGIN_SRC php
+<?php 
+echo "Hello, World!";
+?> 
+#+END_SRC
+
+
+* ?																  :slide:
+
+#+ATTR_HTML: :alt pic of Brendan Eich
+[[./Brendan_Eich-JavaScript.jpg]]
+
+* Brendan Eich 														  :slide:
+
+#+ATTR_HTML: :alt pic of Brendan Eich
+[[./Brendan_Eich-JavaScript.jpg]]
+
+* JavaScript 														  :slide:
+
+- 1995 Mocha
+- 1995 LiveScript in Netscape Navigator 2.0
+- 1995 JavaScript in Netscape Navigator 2.0B3
+- 1996 EcmaScript
+- 2009 Node.js
+- 2015 ES6 -> EcmaScript2015
+
+* JavaScript 														  :slide:
+#+BEGIN_SRC js
+console.log("Hello World!");
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Anders Hejlsberg
+[[./Anders_Hejlsberg-C_Sharp.jpg]]
+
+* Anders Hejlsberg 													  :slide:
+
+#+ATTR_HTML: :alt pic of Anders Hejlsberg
+[[./Anders_Hejlsberg-C_Sharp.jpg]]
+
+* C# 																  :slide:
+
+- 1999 Cool ("C-like Object Oriented Language")
+- 2000 C# (and .NET)
+
+* C# 																  :slide:
+
+#+BEGIN_SRC csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Don Syme
+[[./Don_Syme-FSharp.jpg]]
+
+* Don Syme 															  :slide:
+
+#+ATTR_HTML: :alt pic of Don Syme
+[[./Don_Syme-FSharp.jpg]]
+
+* F# 																  :slide:
+
+- 2005 version 1.0
+
+* F# 																  :slide:
+
+#+BEGIN_SRC fsharp
+printfn "Hello, World!"
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Rich Hickey
+[[./Rich_Hickey-Clojure.jpg]]
+
+* Rich Hickey 														  :slide:
+
+#+ATTR_HTML: :alt pic of Rich Hickey
+[[./Rich_Hickey-Clojure.jpg]]
+
+* Clojure 															  :slide:
+
+- 2005 started designing
+- 2007 initial release
+- 2009 version 1.0 release
+
+* Clojure 															  :slide:
+
+#+BEGIN_SRC lisp
+(println "Hello, World!")
+#+END_SRC
+
+
+* ?																  :slide:
+
+#+ATTR_HTML: :alt pic of Griesemer, Pike, and Thompson
+[[./Griesemer_Pike_Thompson-Go.png]]
+
+* Robert Griesemer, Rob Pike, and Ken Thompson 						  :slide:
+
+#+ATTR_HTML: :alt pic of Griesemer, Pike, and Thompson
+[[./Griesemer_Pike_Thompson-Go.png]]
+
+* Go 																  :slide:
+
+- 2007 started development
+- 2009 announced
+- 2012 version 1
+- 2015 D & K, /The Go Programming Language/
+
+* Go 																  :slide:
+
+#+BEGIN_SRC go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, World!")
+}
+
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Chris Lattner
+[[./Chris_Lattner-Swift.jpg]]
+
+* Chris Lattner 													  :slide:
+
+#+ATTR_HTML: :alt pic of Chris Lattner
+[[./Chris_Lattner-Swift.jpg]]
+
+* Swift 															  :slide:
+
+- 2010 developed
+- 2014 version 1
+- 2015-12-03 open sourced
+
+* Swift 															  :slide:
+
+#+BEGIN_SRC python
+print("Hello, World!")
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of José Valim
+[[./Jose_Valim-Elixir.jpg]]
+
+* José Valim 														  :slide:
+
+#+ATTR_HTML: :alt pic of José Valim
+[[./Jose_Valim-Elixir.jpg]]
+
+* Elixir 															  :slide:
+
+- 2012 developed
+- 2014 version 1
+- 2015 version 1.1
+- 2016 version 1.2
+
+* Elixir 															  :slide:
+
+#+BEGIN_SRC elixir
+IO.puts "Hello, World!"
+#+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Graydon Hoare
+[[./Graydon_Hoare-Rust.jpg]]
+
+* Graydon Hoare 													  :slide:
+
+#+ATTR_HTML: :alt pic of Graydon Hoare
+[[./Graydon_Hoare-Rust.jpg]]
+
+* Rust 																  :slide:
+
+- 2009 started by Graydon Hoare in OCaml
+- 2010 developed by Mozilla in Rust
+- 2012 first pre-alpha release
+- 2015 version 1.0
+
+* Rust 																  :slide:
+
+#+BEGIN_SRC rust
+fn main() {
+    println!("Hello, World!");
+}
+#+END_SRC
+
+
+* Thanks! 															  :slide:
+
+- @oylenshpeegul
+- oylenshpeegul@gmail.com
+
+
+#+OPTIONS: num:nil tags:t
+
+#+TAGS: slide(s)
+
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="common.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="screen.css" media="screen" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="projection.css" media="projection" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="presenter.css" media="presenter" />
+
+#+BEGIN_HTML
+<script type="text/javascript" src="org-html-slideshow.js"></script>
+#+END_HTML
+
+# Local Variables:
+# org-html-head-include-default-style: nil
+# org-html-head-include-scripts: nil
+# End:
