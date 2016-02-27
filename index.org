@@ -704,6 +704,29 @@ fn main() {
 #+END_SRC
 
 
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Sylvan Clebsch
+[[./Sylvan_Clebsch-Pony.jpg]]
+
+* Sylvan Clebsch 													  :slide:
+
+#+ATTR_HTML: :alt pic of Sylvan Clebsch
+[[./Sylvan_Clebsch-Pony.jpg]]
+
+* Pony 																  :slide:
+
+- 2015 ponylang on github
+
+* Pony 																  :slide:
+
+#+BEGIN_SRC pony
+actor Main
+  new create(env: Env) =>
+    env.out.print("Hello, World!")
+#+END_SRC
+
+
 * Thanks! 															  :slide:
 
 - @oylenshpeegul
