@@ -720,7 +720,7 @@ fn main() {
 
 * Pony 																  :slide:
 
-#+BEGIN_SRC pony
+#+BEGIN_SRC ponylang
 actor Main
   new create(env: Env) =>
     env.out.print("Hello, World!")
