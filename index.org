@@ -706,6 +706,33 @@ fn main() {
 
 * ? 																  :slide:
 
+#+ATTR_HTML: :alt pic of Evan Czaplicki
+[[./Evan_Czaplicki-Elm.jpg]]
+
+* Evan Czaplicki 													  :slide:
+
+#+ATTR_HTML: :alt pic of Evan Czaplicki
+[[./Evan_Czaplicki-Elm.jpg]]
+
+* Elm 																  :slide:
+
+- 2011 designed (as his thesis)
+- 2012 version 0.1 released in April
+- 2015 version 0.16 in November
+
+* Elm 																  :slide:
+
+#+BEGIN_SRC elm
+import Html exposing (span, text)
+import Html.Attributes exposing (class)
+
+main =
+  span [class "welcome-message"] [text "Hello, World!"]
+#+END_SRC
+
+
+* ? 																  :slide:
+
 #+ATTR_HTML: :alt pic of Sylvan Clebsch
 [[./Sylvan_Clebsch-Pony.jpg]]
 
