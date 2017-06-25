@@ -200,6 +200,16 @@ q
 #+ATTR_HTML: :alt pic of Aho, Weinberger, and Kernighan
 [[./Aho_Weinberger_Kernighan-Awk.jpg]]
 
+* Aho  Weinberger  Kernighan                                          :slide:
+
+#+ATTR_HTML: :alt pic of Aho, Weinberger, and Kernighan
+[[./Aho_Weinberger_Kernighan-Awk.jpg]]
+
+* AWK                                                                 :slide:
+
+#+ATTR_HTML: :alt pic of Aho, Weinberger, and Kernighan
+[[./Aho_Weinberger_Kernighan-Awk.jpg]]
+
 * Awk 																  :slide:
 
 - 1977 appeared
