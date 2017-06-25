@@ -282,6 +282,7 @@ echo "Hello, World!"
 - 1985 Stroustrup, /The C++ Programming Language/
 - 1998 C++98
 - 2011 C++11
+- "Modern C++" (C++11, C++14, C++17, &c.)
 
 * C++ 																  :slide:
 #+BEGIN_SRC c++
@@ -358,6 +359,8 @@ hello() -> io:fwrite("Hello, World!\n").
 - 1991 /Programming Perl/ (pink camel)
 - 1994 version 5 released
 - 1996 /Programming Perl, 2e/ (blue camel)
+- 2007 Perl 5.10 released
+- "Modern Perl" (Perl 5.10, 5.12, &c.)
 - 2015 version 6 released
 
 * Perl 																  :slide:
