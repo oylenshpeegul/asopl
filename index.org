@@ -470,6 +470,11 @@ class HelloWorldApp {
 #+ATTR_HTML: :alt pic of Yukihiro Matsumoto
 [[./Yukihiro_Matsumoto-Ruby.jpg]]
 
+* Matz                                                                :slide:
+
+#+ATTR_HTML: :alt pic of Yukihiro Matsumoto
+[[./Yukihiro_Matsumoto-Ruby.jpg]]
+
 * Ruby 																  :slide:
 
 - 1993 conceived
