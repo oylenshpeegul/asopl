@@ -413,6 +413,29 @@ puts "Hello, World!"
 echo "Hello, World!"
 #+END_SRC
 
+* ?																  :slide:
+
+#+ATTR_HTML: :alt pic of Celes, Ierusamlischy, and Henrique de Figueiredo
+[[./Waldemar_Celes_Roberto_Ierusamlimschy_&_Luiz_Henrique_de_Figueiredo-Lua.jpg]]
+
+* Waldemar Celes, Roberto Ierusamlimschy, & Luiz Henrique de Figueiredo :slide:
+
+#+ATTR_HTML: :alt pic of Celes, Ierusamlischy, and Henrique de Figueiredo
+[[./Waldemar_Celes_Roberto_Ierusamlimschy_&_Luiz_Henrique_de_Figueiredo-Lua.jpg]]
+
+* Lua                                                                 :slide:
+
+- 1993 version 1.0
+- 1994 version 1.1 (first public release)
+- 2003 version 5.0
+- 2015 version 5.3
+- 2017 version 5.3.4
+
+* Lua                                                                 :slide:
+#+BEGIN_SRC lua
+print("Hello, World!")
+#+END_SRC
+
 
 * ?																  :slide:
 
