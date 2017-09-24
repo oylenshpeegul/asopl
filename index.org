@@ -613,6 +613,8 @@ class Program
 * F# 																  :slide:
 
 - 2005 version 1.0
+- 2015 version 4.0
+- 2017 version 4.1
 
 * F# 																  :slide:
 
@@ -635,7 +637,8 @@ printfn "Hello, World!"
 
 - 2005 started designing
 - 2007 initial release
-- 2009 version 1.0 release
+- 2009 version 1.0
+- 2017 version 1.9?
 
 * Clojure 															  :slide:
 
@@ -690,6 +693,7 @@ func main() {
 - 2010 developed
 - 2014 version 1
 - 2015-12-03 open sourced
+- 2017 version 4
 
 * Swift 															  :slide:
 
@@ -762,8 +766,8 @@ fn main() {
 * Elm 																  :slide:
 
 - 2011 designed (as his thesis)
-- 2012 version 0.1 released in April
-- 2015 version 0.16 in November
+- 2012 version 0.1
+- 2016 version 0.18
 
 * Elm 																  :slide:
 
@@ -788,7 +792,9 @@ main =
 
 * Pony 																  :slide:
 
+- 2014 first Pony program compiled and run
 - 2015 ponylang on github
+- 2017 version 0.19
 
 * Pony 																  :slide:
 
