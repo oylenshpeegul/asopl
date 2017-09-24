@@ -16,6 +16,7 @@
 
 * FLOW-MATIC 														  :slide:
 
+- 1952 A-0
 - 1955 B-0 (Business Language Version 0)
 - 1955 FLOW-MATIC
 - 1960 COBOL
@@ -413,6 +414,7 @@ puts "Hello, World!"
 echo "Hello, World!"
 #+END_SRC
 
+
 * ?																  :slide:
 
 #+ATTR_HTML: :alt pic of Celes, Ierusamlischy, and Henrique de Figueiredo
@@ -475,6 +477,7 @@ print("Hello, World!")
 - 1991 Oak
 - 1995 version 1.0
 - 2007 open-sourced
+- 2017-09-21 version 1.9 (aka, "Java 9")
 
 * Java 																  :slide:
 #+BEGIN_SRC java
