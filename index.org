@@ -453,8 +453,8 @@ print("Hello, World!")
 
 - 1989 designed
 - 1991 posted to /alt.sources/
-- 1994 version 1 released
-- 2008 version 3 released
+- 1994 version 1.0
+- 2008 version 3.0
 
 * Python 															  :slide:
 #+BEGIN_SRC python
