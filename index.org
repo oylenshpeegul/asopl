@@ -1,11 +1,10 @@
 
 * A Survey of Programming Languages									  :slide:
 
+* Oylenshpeegul                                                       :slide:
+
 #+ATTR_HTML: :alt oylenshpeegul icon
 [[./oylenshpeegul.png]]
-
-- @oylenshpeegul
-- oylenshpeegul@gmail.com
 
 
 * ? 																  :slide:
