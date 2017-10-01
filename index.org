@@ -1,13 +1,8 @@
 
 * A Survey of Programming Languages									  :slide:
 
-* Oylenshpeegul                                                       :slide:
 
-#+ATTR_HTML: :alt oylenshpeegul icon
-[[./oylenshpeegul.png]]
-
-
-* ? 																  :slide:
+* ?                                                                   :slide:
 
 #+ATTR_HTML: :alt pic of Grace Hopper
 [[./Grace_Hopper-FLOWMATIC.jpg]]
