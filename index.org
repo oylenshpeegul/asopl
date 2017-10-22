@@ -93,6 +93,31 @@ MAIN.
 
 * ? 																  :slide:
 
+#+ATTR_HTML: :alt pic of Nygaard and Dahl
+[[./Nygaard_Dahl-Simula.jpg]]
+
+* Kristen Nygaard, Ole-Johan Dahl                                     :slide:
+
+#+ATTR_HTML: :alt pic of Nygaard and Dahl
+[[./Nygaard_Dahl-Simula.jpg]]
+
+* Simula                                                              :slide:
+
+- 1965 first released
+- 1967 Simula-67 added objects, classes, inheritance, subclasses, ... 
+
+* Simula                                                              :slide:
+
+#+BEGIN_SRC simula
+Begin
+   OutText ("Hello World!");
+   Outimage;
+End;
+#+END_SRC
+
+
+* ? 																  :slide:
+
 #+ATTR_HTML: :alt pic of Niklaus Wirth
 [[./Niklaus_Wirth-Pascal.jpg]]
 
@@ -165,6 +190,38 @@ int main()
 #+BEGIN_SRC sh
 echo "Hello, World!"
 #+END_SRC
+
+
+* ? 																  :slide:
+
+#+ATTR_HTML: :alt pic of Kay, Goldberg, and Ingalls
+[[./Kay_Goldberg_Ingalls-Smalltalk.jpg]]
+
+* Alan Kay, Adele Goldberg, Dan Ingalls                               :slide:
+
+#+ATTR_HTML: :alt pic of Kay, Goldberg, and Ingalls
+[[./Kay_Goldberg_Ingalls-Smalltalk.jpg]]
+
+* Smalltalk                                                           :slide:
+
+- 1971 first released
+- 1980 Smalltalk-80
+- 1983 Smalltalk-80 version 2
+- 1996 Squeak
+- 1998 ANSI Smalltalk
+
+* Smalltalk                                                           :slide:
+
+#+BEGIN_SRC smalltalk
+Object subclass: Hello [
+    greet [
+            'Hello, World' displayNl
+    ]
+].
+greeting := Hello new.
+greeting greet.
+#+END_SRC
+
 
 
 * ? 																  :slide:
