@@ -374,7 +374,7 @@ echo "Hello, World!"
 #+END_SRC
 
 
-* ?																  :slide:
+* ?																	  :slide:
 
 #+ATTR_HTML: :alt pic of Armstrong, Verding, and Williams
 [[./Joe_Armstrong_Robert_Verding_&_Mike_Williams-Erlang.jpg]]
@@ -399,7 +399,7 @@ hello() -> io:fwrite("Hello, World!\n").
 #+END_SRC
 
 
-* ?																  :slide:
+* ?																	  :slide:
 
 #+ATTR_HTML: :alt pic of Larry Wall
 [[./Larry_Wall-Perl.jpg]]
@@ -425,7 +425,7 @@ say 'Hello, World!';
 #+END_SRC
 
 
-* ?																  :slide:
+* ?																	  :slide:
 
 #+ATTR_HTML: :alt pic of John Ousterhout
 [[./John_Ousterhout-Tcl.jpg]]
@@ -448,7 +448,7 @@ puts "Hello, World!"
 #+END_SRC
 
 
-* ?																  :slide:
+* ?																	  :slide:
 
 #+ATTR_HTML: :alt pic of Brian J. Fox
 [[./Brian_J_Fox-bash.jpg]]
@@ -470,7 +470,7 @@ echo "Hello, World!"
 #+END_SRC
 
 
-* ?																  :slide:
+* ?																	  :slide:
 
 #+ATTR_HTML: :alt pic of Celes, Ierusamlischy, and Henrique de Figueiredo
 [[./Waldemar_Celes_Roberto_Ierusamlimschy_&_Luiz_Henrique_de_Figueiredo-Lua.jpg]]
@@ -494,7 +494,7 @@ print("Hello, World!")
 #+END_SRC
 
 
-* ?																  :slide:
+* ?																	  :slide:
 
 #+ATTR_HTML: :alt pic of Guido van Rossum
 [[./Guido_van_Rossum-Python.jpg]]
@@ -553,7 +553,7 @@ Hello, World!
 #+END_SRC
 
 
-* ?																  :slide:
+* ?																	  :slide:
 
 #+ATTR_HTML: :alt pic of Yukihiro Matsumoto
 [[./Yukihiro_Matsumoto-Ruby.jpg]]
@@ -609,7 +609,7 @@ echo "Hello, World!";
 #+END_SRC
 
 
-* ?																  :slide:
+* ?																	  :slide:
 
 #+ATTR_HTML: :alt pic of Brendan Eich
 [[./Brendan_Eich-JavaScript.jpg]]
@@ -635,7 +635,6 @@ console.log("Hello World!");
 
 
 * ? 																  :slide:
-
 #+ATTR_HTML: :alt pic of Anders Hejlsberg
 [[./Anders_Hejlsberg-C_Sharp.jpg]]
 
@@ -661,6 +660,33 @@ class Program
         Console.WriteLine("Hello, World!");
     }
 }
+#+END_SRC
+
+
+
+* ? 																  :slide:
+#+ATTR_HTML: :alt pic of Martin Odersky
+[[./Martin_Odersky-Scala.jpg]]
+
+* Martin Odersky                                                      :slide:
+
+#+ATTR_HTML: :alt pic of Martin Odersky
+[[./Martin_Odersky-Scala.jpg]]
+
+* Scala                                                               :slide:
+
+- 2001 started designing (derived from Funnel)
+- 2003 released internally at EPFL
+- 2004 version 1.0
+- 2006 version 2.0
+- 2016 version 2.12 (requires Java 8)
+
+* Scala                                                               :slide:
+
+#+BEGIN_SRC scala
+object HelloWorld extends App {
+   println("Hello, World!")
+ }
 #+END_SRC
 
 
